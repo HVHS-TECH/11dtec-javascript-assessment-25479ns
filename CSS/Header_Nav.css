@@ -1,53 +1,50 @@
-html, body{
+html, body {
     background-color: #FFF8F0;
 }
-header{
+
+header {
     background-color: #1D1D1D;
     display: flex;
     border-radius: 5px;
-    padding: 0px 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     outline: 1px solid white;
     background-clip: padding-box;
     justify-content: space-between;
     align-items: center;
-
 }
 
-.search-icon{
+.search-icon {
     height: 35px;
     width: auto;
     padding: 5px;
 }
 
-.Search-Bar{
-    border: 0px transparent;
-    background-color: #FFF8F0;
+.search-bar {
     border: none;
+    background-color: #FFF8F0;
     outline: none;
-    font-size: medium;
+    font-size: 16px;
     padding-left: 10px;
 }
 
-.shopping-cart{
+.shopping-cart {
     display: flex;
     align-items: center;
     padding-right: 8px;
 }
 
-shopping-cart-icon{
-    color: white
+.shopping-cart-icon {
+    color: white;
     font-size: 19px;
 }
 
-.search-container{
+.search-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #FFF8F0;
     border-radius: 360px;
     padding: 5px;
-    width: 18px;
+    width: 180px; /* Adjust as needed */
 }
-
-
