@@ -1,5 +1,5 @@
 html, body {
-    background-color: #FFF8F0;
+    background-color: #F9F6F1;
 }
 
 header {
@@ -15,12 +15,14 @@ header {
 }
 
 .search-icon {
-    height: 35px;
-    width: auto;
-    padding: 5px;
+    height: 25px;
+    width: 25px;
+    margin-left: 5px;
+    cursor: pointer;
 }
 
 .search-bar {
+    flex: 1;
     border: none;
     background-color: #FFF8F0;
     outline: none;
@@ -46,7 +48,7 @@ header {
     background-color: #FFF8F0;
     border-radius: 360px;
     padding: 5px;
-    width: 180px; /* Adjust as needed */
+    width: 300px; /* Adjust as needed */
 }
 
 /* Making the search icon and the shopping cart icon white */
@@ -94,13 +96,17 @@ nav > a:hover {
 }
 
 /* Slideshow container */
-.banner-img-containor {
+.banner-img-container {
   position: relative;
   margin: auto;
 }
 
+.banner-img {
+    display: none;
+}
+
 /* Making the big banner */
-.banner-img-containor > .banner-img > img{
+.banner-img-container > .banner-img > img{
     max-width: 100%;
     height: auto;
     overflow: hidden;
