@@ -13,3 +13,20 @@
     grid-template-rows: 1fr 1fr;
     justify-items: center;
 }
+
+.Menu_Item_Catagory > div > img {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Menu_Item_Catagory > div:hover > img{
+    transform: translateY(-15px);
+    transform:scale(1.1);
+    transition: all ease 0.5s;
+}
+
+.Menu_Item_Catagory > div > a {
+    padding-top: 10px;
+}
