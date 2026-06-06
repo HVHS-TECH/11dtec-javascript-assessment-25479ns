@@ -1,6 +1,6 @@
 .Featured_Items_container{
     display: flex;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
 }
