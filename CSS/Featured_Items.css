@@ -1,3 +1,10 @@
+.Featured_Items_container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .Featured_Items_container img{
     height: 600px;
     width: 500px;
