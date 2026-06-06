@@ -30,7 +30,51 @@ scroll-behavior:smooth;
         <h1 class="Header" id="header">Cart</h1>
         <div class="Receipt" id="Receipt_Area">
         <h1 class="receipt_logo" id="receipt_logo"></h1>
-         <div class="Receipt_Top" id="Receipt_Top_Area">
-        </div>
-        </div>
-    </main>
+        <div class="Receipt_Top" id="Receipt_Top_Area"></div>
+
+<p id="grandTotal"></p>
+
+<script>
+function loadCart() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    let container = document.getElementById("Receipt_Top_Area");
+    let grandTotal = 0;
+
+    container.innerHTML = "";
+
+    cart.forEach((item, index) => {
+        grandTotal += item.total;
+
+        container.innerHTML += `
+            <div style="display:flex; align-items:center; margin-bottom:10px; border-bottom:1px solid #ccc; padding:10px;">
+                <img src="${item.image}" width="80" height="80">
+                <div style="margin-left:10px;">
+                    <h3>${item.name}</h3>
+                    <p>Price: $${item.price}</p>
+                    <p>Qty: ${item.quantity}</p>
+                    <p>Total: $${item.total}</p>
+
+                    <button onclick="removeItem(${index})">Remove</button>
+                </div>
+            </div>
+        `;
+    });
+
+    document.getElementById("grandTotal").innerText =
+        "Grand Total: $" + grandTotal.toFixed(2);
+}
+
+function removeItem(index) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cart.splice(index, 1);
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    loadCart();
+}
+
+loadCart();
+
+</script>
