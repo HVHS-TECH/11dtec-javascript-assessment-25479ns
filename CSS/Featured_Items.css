@@ -14,5 +14,7 @@
 
 .Add_To_Cart_Button{
     background-color: #D97706;
-    
+    color: white;
+    border: none;
+    padding: 1
 }
