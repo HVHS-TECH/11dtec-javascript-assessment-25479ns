@@ -1,0 +1,11 @@
+.Menu_Item_Catagory{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.Menu_Item_Catagory > div{
+    display: grid;
+    grid-template-areas: 
+    "Menu_Item_Catagory";
+}
