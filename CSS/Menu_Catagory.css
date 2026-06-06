@@ -9,7 +9,7 @@
     grid-template-areas: 
     "Menu_Item_Catagory_IMG"
     "Menu_Item_Catagory_Text";
-    grid-template-columns: repeat(auto-fit, minmax(280px,));
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
     grid-template-rows: 1fr 1fr;
     justify-items: center;
 }
