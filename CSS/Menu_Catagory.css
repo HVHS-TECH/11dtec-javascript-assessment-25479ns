@@ -15,8 +15,8 @@
 }
 
 .Menu_Item_Catagory > div > img {
-    height: 100px;
-    width: auto;
+    height: 600px;
+    width: 500px;
     border-radius: 50%;
     object-fit: cover;
 }
