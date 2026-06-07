@@ -28,12 +28,13 @@ scroll-behavior:smooth;
 
     <h2>Cart</h2>
 
+<img id="cartImage" class="cart-image">
+
 <p id="cartName"></p>
 <p id="cartQty"></p>
 <p id="cartTotal"></p>
 
 <script>
-
 document.getElementById("cartImage").src =
     localStorage.getItem("itemImage");
 
@@ -45,5 +46,4 @@ document.getElementById("cartQty").innerText =
 
 document.getElementById("cartTotal").innerText =
     "Total: $" + localStorage.getItem("itemTotal");
-
 </script>
