@@ -1,32 +1,34 @@
 .Menu_Item_Catagory{
-    display:flex;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* allows wrapping */
+    gap: 30px;
     margin-top: 50px;
 }
 
 .Menu_Item_Catagory > div{
-    display: grid;
-    grid-template-areas: 
-    "Menu_Item_Catagory_IMG"
-    "Menu_Item_Catagory_Text";
-    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.Menu_Item_Catagory > div > img {
-    height: 600px;
-    width: 500px;
-    border-radius: 50%;
+.Menu_Item_Catagory > div > img{
+    width: 260px;
+    height: 260px;
     object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
 }
 
+/* hover effect */
 .Menu_Item_Catagory > div:hover > img{
-    transform: translateY(-15px);
-    transform:scale(1.1);
-    transition: all ease 0.5s;
+    transform: translateY(-15px) scale(1.05);
 }
 
-.Menu_Item_Catagory > div > a {
-    padding-top: 10px;
+.Menu_Item_Catagory > div > a{
+    margin-top: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
 }
