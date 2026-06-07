@@ -25,3 +25,25 @@ scroll-behavior:smooth;
         <a href="menu.html">Menu</a>
         <a href="cart.html">Cart</a>
     </nav>
+
+    <h2>Cart</h2>
+
+<p id="cartName"></p>
+<p id="cartQty"></p>
+<p id="cartTotal"></p>
+
+<script>
+
+document.getElementById("cartImage").src =
+    localStorage.getItem("itemImage");
+
+document.getElementById("cartName").innerText =
+    localStorage.getItem("itemName");
+
+document.getElementById("cartQty").innerText =
+    "Quantity: " + localStorage.getItem("itemQty");
+
+document.getElementById("cartTotal").innerText =
+    "Total: $" + localStorage.getItem("itemTotal");
+
+</script>
