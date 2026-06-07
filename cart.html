@@ -42,3 +42,30 @@ scroll-behavior:smooth;
 </table>
 
 <h2 id="grandTotal"></h2>
+
+<script>
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let table = document.getElementById("cartTable");
+
+let grandTotal = 0;
+
+cart.forEach(item => {
+
+    grandTotal += item.total;
+
+    table.innerHTML += `
+        <tr>
+            <td>${item.name}</td>
+            <td>$${item.price.toFixed(2)}</td>
+            <td>${item.quantity}</td>
+            <td>$${item.total.toFixed(2)}</td>
+        </tr>
+    `;
+});
+
+document.getElementById("grandTotal").innerText =
+    "Grand Total: $" + grandTotal.toFixed(2);
+
+</script>
