@@ -2,4 +2,36 @@
     padding: 40px, 80px;
 }
 
-.Menu
+.Menu_Card{
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.Menu_Card:hover{
+    transform: translateY(-10px);
+}
+
+.Menu_Card:img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.Item_Info h3{
+    margin-bottom: 10px;
+    color: #2b1a11;
+}
+
+.Item_Info p{
+    margin-bottom: 12px;
+    color: #666;
+}
+
+.Item_Info span{
+    font-size: 20px;
+    font-weight: bold;
+    color:#8b4513;
+}
