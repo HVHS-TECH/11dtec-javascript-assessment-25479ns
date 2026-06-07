@@ -31,3 +31,9 @@ cart.forEach(item =>
 
     cartContainer.appendChild(itemDiv);
 });
+
+function ResetCart()
+{
+    localStorage.removeItem("cart")
+    location.reload();
+}
