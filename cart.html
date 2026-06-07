@@ -26,8 +26,19 @@ scroll-behavior:smooth;
         <a href="cart.html">Cart</a>
     </nav>
 
-    <main>
-        <h1 class="Header" id="header">Cart</h1>
-        <div class="Receipt" id="Receipt_Area">
-        <h1 class="receipt_logo" id="receipt_logo"></h1>
-        <div class="Receipt_Top" id="Receipt_Top_Area"></div>
+    <h1>Shopping Cart</h1>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+
+    <tbody id="cartTable"></tbody>
+</table>
+
+<h2 id="grandTotal"></h2>
