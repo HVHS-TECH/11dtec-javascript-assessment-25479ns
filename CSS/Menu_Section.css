@@ -35,10 +35,3 @@
     font-weight: bold;
     color:#8b4513;
 }
-
-.Menu_Items{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-    gap:30px;
-    margin-top:30px;
-}
