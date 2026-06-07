@@ -1,5 +1,5 @@
 .Menu_Section{
-    padding: 40px, 80px;
+    padding: 40px 80px;
 }
 
 .Menu_Card{
@@ -14,7 +14,7 @@
     transform: translateY(-10px);
 }
 
-.Menu_Card:img{
+.Menu_Card img{
     width: 10px;
     height: 10px;
     object-fit: cover;
