@@ -1,5 +1,6 @@
 .Menu_Section{
     padding: 40px 80px;
+    display: grid;
 }
 
 .Menu_Card{
