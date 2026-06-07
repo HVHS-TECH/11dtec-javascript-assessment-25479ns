@@ -1,4 +1,5 @@
 <script>
+    
     const menuItems = {
     101: { name: "Double Bacon & Cheese Burger", price: 12.00 },
     103: { name: "Crispy Chicken Burger", price: 10.00 },
