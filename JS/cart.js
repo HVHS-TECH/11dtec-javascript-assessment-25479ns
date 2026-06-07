@@ -25,8 +25,30 @@ function Add_To_Cart_Button(itemId)
 {
     const quantityinput =
           document.getElementById("item_quantity_" + itemId);
-          
+
     
+    const quantity = parseInt(quantityInput.value);
+
+    if (!quantity || quantity <= 0)
+    {
+        alert("Please enter a valid quantity.");
+        return;
+    }
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cart.push({
+        id: itemId,
+        name: menuItems[itemId].name,
+        price: menuItems[itemId].price,
+        quantity: quantity,
+        total: menuItems[itemId].price * quantity
+    });
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert("Added to cart!");
 }
+
 
 </script>
