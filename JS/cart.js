@@ -23,7 +23,7 @@
 
 function Add_To_Cart_Button(itemId) 
 {
-    const quantityinput =
+    const quantityInput =
           document.getElementById("item_quantity_" + itemId);
 
     
