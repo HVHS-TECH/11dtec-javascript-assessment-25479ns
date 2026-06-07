@@ -14,10 +14,6 @@
     padding: 10px;
 }
 
-.Menu_Card:hover{
-    transform: translateY(-10px);
-}
-
 .Menu_Card img{
     width: 400px;
     height: 400px;
