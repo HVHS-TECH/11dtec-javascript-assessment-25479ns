@@ -1,0 +1,6 @@
+<script>
+    const menuItems = {
+        
+    }
+
+</script>
