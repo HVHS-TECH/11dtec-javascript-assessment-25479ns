@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="CSS/Menu_Catogary.css">
     <link rel="stylesheet" href="CSS/Food_Items_Grid.css">
     <link rel="stylesheet" href="CSS/Featured_Items.css">
-    <link rel="stylesheet" href="CSS/Reset_Cart.css">
+    <link rel="stylesheet" href="CSS/Cart_Item_Ordering.css">
 
 <title>Café Delight - By Nithum Sandro</title>
 <style>html{
@@ -32,16 +32,20 @@ scroll-behavior:smooth;
 
 <div id="cartItems"></div>
 
+<h2 id="grandTotal"></h2>
+
 <button type="button" onclick="ResetCart()" class="reset-button">Reset Cart</button><br></br>
 
 <script src="JS/cart.js"></script>
 
 <div class="customer-info">
     <label for="customerName">Name:</label>
-    <input type="text" id="customerName" placeholder="Enter your name"><br></br>
+    <input type="text" id="customerName" placeholder="Enter your name">
 
     <label for="customerMoney">Money Available:</label>
     <input type="number" id="customerMoney" placeholder="How much money do you have?">
+
+    <button onclick="SubmitInfo()" class="submit-button">Submit</button>
 </div>
 
 </body>

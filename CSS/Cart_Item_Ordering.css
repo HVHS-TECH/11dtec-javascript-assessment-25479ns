@@ -18,3 +18,27 @@
 .reset-button:active {
     transform: translateY(0);
 }
+
+.customer-info {
+    width: 300px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.customer-info label {
+    font-weight: bold;
+}
+
+.customer-info input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.customer-info input:focus {
+    outline: none;
+    border-color: #007bff;
+}

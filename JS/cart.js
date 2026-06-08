@@ -2,7 +2,10 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 let cartContainer = document.getElementById("cartItems");
 
+let grandTotal = 0;
+
 cart.forEach(item => {
+    grandTotal += item.price * item.quantity;
     let itemDiv = document.createElement("div");
 
     itemDiv.innerHTML = `
@@ -31,7 +34,16 @@ cart.forEach(item => {
     cartContainer.appendChild(itemDiv);
 });
 
+document.getElementById("grandTotal").textContent =
+`Cart Total: $${grandTotal.toFixed(2)}`;
+
 function ResetCart() {
     localStorage.removeItem("cart");
     location.reload();
+}
+
+if (money >= cartTotal) {
+    alert("Your order has been placed");
+} else {
+    alert("You are too broke. Go get a Job")
 }
