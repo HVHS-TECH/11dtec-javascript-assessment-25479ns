@@ -44,7 +44,7 @@ function ResetCart() {
 
 function SubmitInfo() {
 
-if ("CustomerMoney" >= "GrandTotal") {
+if ("CustomerMoney" >= "grandTotal") {
     alert("Your order has been placed");
 } else {
     alert("You have Insufficient funds. Go get a Job");
