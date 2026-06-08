@@ -46,7 +46,7 @@ function SubmitInfo() {
 
 if ("customerMoney >= grandTotal") {
     alert ("Your order has been placed");
-} else if {
-    alert = ("You have infficient funds. Please Try Again")
+} else {
+    alert ("You have infficient funds. Please Try Again")
 }
 }
