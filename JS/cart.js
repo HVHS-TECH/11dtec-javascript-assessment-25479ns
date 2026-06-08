@@ -47,7 +47,7 @@ function SubmitInfo() {
 if (money >= grandTotal) {
     alert("Your order has been placed");
 } else {
-    alert("You are too broke. Go get a Job")
+    alert("You have Insufficient funds. Go get a Job")
 }
 
 }
