@@ -44,6 +44,9 @@ function ResetCart() {
 
 function SubmitInfo() {
 
+    let money = Number(customerMoney);
+    let total = Number(grandTotal);
+
 if (customerMoney >= grandTotal) {
     alert ("Your order has been placed");
 } else {
