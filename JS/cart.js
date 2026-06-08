@@ -47,7 +47,7 @@ function SubmitInfo() {
 if ("CustomerMoney" >= "grandTotal") {
     alert("Your order has been placed");
 } else {
-    alert("You have Insufficient funds. Go get a Job");
+    alert("You have Insufficient funds. Please Try Again");
 }
 
 }
