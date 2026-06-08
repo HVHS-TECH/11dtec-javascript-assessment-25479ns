@@ -42,8 +42,12 @@ function ResetCart() {
     location.reload();
 }
 
+function SubmitInfo() {
+
 if (money >= cartTotal) {
     alert("Your order has been placed");
 } else {
     alert("You are too broke. Go get a Job")
+}
+
 }
