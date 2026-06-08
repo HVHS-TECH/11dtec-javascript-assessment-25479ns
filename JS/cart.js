@@ -32,8 +32,8 @@ cart.forEach(item =>
     cartContainer.appendChild(itemDiv);
 });
 
-function ResetCart()
-{
-    localStorage.removeItem("cart")
+function ResetCart() {
+    localStorage.removeItem("cart");
+    alert("Your cart has been reset!");
     location.reload();
 }
