@@ -44,9 +44,9 @@ function ResetCart() {
 
 function SubmitInfo() {
 
-if ("customerMoney >= grandTotal") {
+if (customerMoney >= grandTotal) {
     alert ("Your order has been placed");
 } else {
     alert ("You have infficient funds. Please Try Again")
-}
+ }
 }
