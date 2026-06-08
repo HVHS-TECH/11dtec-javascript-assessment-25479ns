@@ -44,5 +44,13 @@
 }
 
 .submit-button {
-    background-color:
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5 ease;
 }
