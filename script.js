@@ -24,4 +24,3 @@ function Add_To_Cart_Button(id, name, price, image, quantityInputId)
 
     alert("Item added to cart!");
 }
-
