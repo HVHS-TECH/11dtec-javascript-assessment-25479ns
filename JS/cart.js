@@ -34,6 +34,6 @@ cart.forEach(item =>
 
 function ResetCart()
 {
-    localStorage.removeItem("art")
+    localStorage.removeItem("cart")
     location.reload();
 }
