@@ -2,8 +2,7 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 let cartContainer = document.getElementById("cartItems");
 
-cart.forEach(item =>
-{
+cart.forEach(item => {
     let itemDiv = document.createElement("div");
 
     itemDiv.innerHTML = `
