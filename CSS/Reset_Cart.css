@@ -1,3 +1,9 @@
 .reset-button {
-    background-color=
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-raidus
 }
