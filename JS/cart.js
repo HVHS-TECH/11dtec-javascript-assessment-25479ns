@@ -33,6 +33,5 @@ cart.forEach(item => {
 
 function ResetCart() {
     localStorage.removeItem("cart");
-    alert("Your cart has been reset!");
     location.reload();
 }
