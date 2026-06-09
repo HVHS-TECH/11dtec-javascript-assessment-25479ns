@@ -49,7 +49,7 @@ function SubmitInfo() {
     let total = Number(grandTotal);
 
     if (!name) {
-        alart("Please enter your name");
+        alert("Please enter your name");
         return;
     }
 
@@ -59,6 +59,7 @@ if (money >= grandTotal) {
     alert ("You have insfficient funds. Please Try Again")
  }
 
+ let balance = money - grandTotal;
 
 let receiptDiv = document.getElementById("receipt");
 receiptDiv.innerHTML = `
