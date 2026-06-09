@@ -44,8 +44,14 @@ function ResetCart() {
 
 function SubmitInfo() {
 
+    let name = document.getElementById("customerName").value.trim();
     let money = Number(document.getElementById("customerMoney").value);
     let total = Number(grandTotal);
+
+    if (!name) {
+        alart("Please enter your name");
+        return;
+    }
 
 if (money >= grandTotal) {
     alert ("Your order has been placed");
