@@ -61,4 +61,10 @@ if (money >= grandTotal) {
 } 
 
 let receiptDiv = document.getElementById("receipt");
-receiptDiv.innerHTML = 
+receiptDiv.innerHTML = `
+    <h2>Receipt</h2>
+    <p><strong>Name:</strong> ${name}</p>
+    <p><strong>Cart Total:</strong> $${grandTotal.toFixed(2)}</p>
+    <p><strong>Amount Given:</strong> $${money.toFixed(2)}</p>
+    <p><strong>Remaining Balance:</strong> $${balance.toFixed(2)}</p>
+;c
