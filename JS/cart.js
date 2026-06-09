@@ -44,7 +44,7 @@ function ResetCart() {
 
 function SubmitInfo() {
 
-    let money = Number(customerMoney);
+    let money = Number(document.getElementById("customer"));
     let total = Number(grandTotal);
 
 if (customerMoney >= grandTotal) {
