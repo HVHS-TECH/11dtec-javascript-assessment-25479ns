@@ -59,3 +59,6 @@ if (money >= grandTotal) {
     alert ("You have insfficient funds. Please Try Again")
  }
 } 
+
+let receiptDiv = document.getElementById("receipt");
+receiptDiv.innerHTML = 
