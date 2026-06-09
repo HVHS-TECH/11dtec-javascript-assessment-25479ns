@@ -58,7 +58,7 @@ if (money >= grandTotal) {
 } else {
     alert ("You have insfficient funds. Please Try Again")
  }
-} 
+
 
 let receiptDiv = document.getElementById("receipt");
 receiptDiv.innerHTML = `
@@ -68,3 +68,5 @@ receiptDiv.innerHTML = `
     <p><strong>Amount Given:</strong> $${money.toFixed(2)}</p>
     <p><strong>Remaining Balance:</strong> $${balance.toFixed(2)}</p>
 `;
+
+}
