@@ -44,30 +44,77 @@ function ResetCart() {
 
 function SubmitInfo() {
 
-    let name = document.getElementById("customerName").value.trim();
+       let name = document.getElementById("customerName").value.trim();
     let money = Number(document.getElementById("customerMoney").value);
-    let total = Number(grandTotal);
 
     if (!name) {
         alert("Please enter your name");
         return;
     }
 
-if (money >= grandTotal) {
-    alert ("Your order has been placed");
-} else {
-    alert ("You have insfficient funds. Please Try Again")
- }
+    if (money < grandTotal) {
+        alert("You have insufficient funds. Please Try Again");
+        return;
+    }
 
- let balance = money - grandTotal;
+    alert("Your order has been placed");
 
-let receiptDiv = document.getElementById("receipt");
-receiptDiv.innerHTML = `
-    <h2>Receipt</h2>
-    <p><strong>Name:</strong> ${name}</p>
-    <p><strong>Cart Total:</strong> $${grandTotal.toFixed(2)}</p>
-    <p><strong>Amount Given:</strong> $${money.toFixed(2)}</p>
-    <p><strong>Remaining Balance:</strong> $${balance.toFixed(2)}</p>
-`;
+    let balance = money - grandTotal;
 
+    // Create cart items for receipt
+    let receiptItems = "";
+
+    cart.forEach(item => {
+        receiptItems += `
+            <div class="receipt_Chosen_Items">
+                <span>
+                    ${item.name} x${item.quantity}
+                </span>
+                <span>
+                    $${(item.price * item.quantity).toFixed(2)}
+                </span>
+            </div>
+        `;
+    });
+
+    let receiptDiv = document.getElementById("receipt");
+
+    receiptDiv.innerHTML = `
+        <div class="receipt_Top">
+
+            <div class="receipt_logo">
+                <h2>CAFÉ DELIGHT</h2>
+            </div>
+
+            <h3>Purchase Receipt</h3>
+            <p><strong>Customer:</strong> ${name}</p>
+            <p><strong>Date:</strong> 
+                ${new Date().toLocaleDateString()}
+            </p>
+
+        </div>
+
+        <div class="receipt_Chosen_Items_Aligning">
+            ${receiptItems}
+        </div>
+
+        <div class="receipt_Bottom">
+
+            <div class="receipt_Total_Price">
+                <strong>Total Price</strong>
+                <strong>$${grandTotal.toFixed(2)}</strong>
+            </div>
+
+            <div class="receipt_Chosen_Given_Amount">
+                <span>Amount Given</span>
+                <span>$${money.toFixed(2)}</span>
+            </div>
+
+            <div class="receipt_Chosen_Change">
+                <span>Change</span>
+                <span>$${balance.toFixed(2)}</span>
+            </div>
+
+        </div>
+    `;
 }
