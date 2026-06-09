@@ -44,10 +44,10 @@ function ResetCart() {
 
 function SubmitInfo() {
 
-    let money = Number(document.getElementById("customer"));
+    let money = Number(document.getElementById("customerMoney").value);
     let total = Number(grandTotal);
 
-if (customerMoney >= grandTotal) {
+if (money >= grandTotal) {
     alert ("Your order has been placed");
 } else {
     alert ("You have insfficient funds. Please Try Again")
