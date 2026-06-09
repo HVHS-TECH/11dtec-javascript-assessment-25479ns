@@ -10,19 +10,22 @@
 
 .receipt_Top{
     border: 1.5px solid black;
-    padding-left: 1%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 15px;
 }
 
 .receipt_logo{
     border: 1.5px solid black;
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin:0 auto;
+    padding: 10px 0;
+    box-sizing: border-box;
 }
 
 .receipt_Chosen_Items_Aligning{
