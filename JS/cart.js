@@ -117,4 +117,6 @@ function SubmitInfo() {
 
         </div>
     `;
+
+    document.getElementById("receiptPopup").style.display = "flex";
 }
