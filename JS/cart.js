@@ -70,3 +70,5 @@ receiptDiv.innerHTML = `
 `;
 
 }
+
+document.getElementById("receipt").innerHTML = "<h2>TEST</h2>";
