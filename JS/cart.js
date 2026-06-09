@@ -67,4 +67,4 @@ receiptDiv.innerHTML = `
     <p><strong>Cart Total:</strong> $${grandTotal.toFixed(2)}</p>
     <p><strong>Amount Given:</strong> $${money.toFixed(2)}</p>
     <p><strong>Remaining Balance:</strong> $${balance.toFixed(2)}</p>
-;
+`;
