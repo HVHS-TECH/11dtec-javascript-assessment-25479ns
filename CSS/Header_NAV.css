@@ -12,6 +12,7 @@ header {
     background-clip: padding-box;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
 }
 
 .search-icon {
