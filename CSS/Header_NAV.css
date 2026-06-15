@@ -1,5 +1,11 @@
 html, body {
     background-color: #F9F6F1;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    z-index: 9999;
 }
 
 header {
@@ -12,7 +18,6 @@ header {
     background-clip: padding-box;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
 }
 
 .search-icon {
