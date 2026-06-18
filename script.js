@@ -1,5 +1,3 @@
-console.log("Hello world!")
-
 function Add_To_Cart_Button(id, name, price, image, quantityInputId)
 {
     let quantity = document.getElementById(quantityInputId).value;
