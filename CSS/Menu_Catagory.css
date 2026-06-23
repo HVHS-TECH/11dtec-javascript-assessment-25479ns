@@ -6,13 +6,13 @@
     margin-top: 50px;
 }
 
-.Menu_Item_Catagory > div{
+.Menu_Item_Catagory > a div{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.Menu_Item_Catagory > div > img{
+.Menu_Item_Catagory > a img{
     width: 360px;
     height: 360px;
     object-fit: cover;
@@ -22,7 +22,7 @@
 }
 
 /* hover effect */
-.Menu_Item_Catagory > div:hover > img{
+.Menu_Item_Catagory > a:hover img{
     transform: translateY(-15px) scale(1.05);
 }
 
