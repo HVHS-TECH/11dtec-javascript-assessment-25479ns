@@ -61,7 +61,7 @@ function SubmitInfo() {
 
     let balance = money - grandTotal;
 
-    // Create cart items for receipt
+    // Create cart items for your receipt
     let receiptItems = "";
 
     cart.forEach(item => {
