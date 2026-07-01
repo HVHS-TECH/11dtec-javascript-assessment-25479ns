@@ -57,7 +57,7 @@ function SubmitInfo() {
         return;
     }
 
-    alert("Your order has been placed");
+    alert("Thank you! Your order has been placed");
 
     let balance = money - grandTotal;
 
