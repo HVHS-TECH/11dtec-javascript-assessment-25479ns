@@ -44,7 +44,7 @@ function ResetCart() {
 
 function SubmitInfo() {
 
-       let name = document.getElementById("customerName").value.trim();
+    let name = document.getElementById("customerName").value.trim();
     let money = Number(document.getElementById("customerMoney").value);
 
     if (!name) {
