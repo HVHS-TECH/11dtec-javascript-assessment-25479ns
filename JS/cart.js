@@ -52,6 +52,11 @@ function SubmitInfo() {
         return;
     }
 
+    if (!money) {
+        alart("Please enter your money");
+        return;
+    }
+
     if (money < grandTotal) {
         alert("You have insufficient funds. Please Try Again");
         return;
