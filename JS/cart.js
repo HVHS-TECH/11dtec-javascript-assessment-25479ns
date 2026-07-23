@@ -53,7 +53,7 @@ function SubmitInfo() {
     }
 
     if (!money) {
-        alart("Please enter your money");
+        alert("Please enter your money");
         return;
     }
 
